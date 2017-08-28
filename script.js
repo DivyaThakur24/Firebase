@@ -1,24 +1,4 @@
-//create firebase reference
-var dbRef = new Firebase('https://contactstore-8987a.firebaseio.com/');
 
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDvm3oppg1m50c1aJ7wd12qPLd34ixKWe0",
-    authDomain: "contactstore-8987a.firebaseapp.com",
-    databaseURL: "https://contactstore-8987a.firebaseio.com",
-    projectId: "contactstore-8987a",
-    storageBucket: "contactstore-8987a.appspot.com",
-    messagingSenderId: "906091645564"
-  };
-  firebase.initializeApp(config);
-
-
-
-var rootRef = firebase.database().dbref();
-
-var contactsRef = dbRef.child('contacts')
-var usersRef = dbRef.child('users')
-var auth = null;
 //Register
 $('#doRegister').on('click', function (e) {
   e.preventDefault();
